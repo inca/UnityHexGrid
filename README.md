@@ -8,4 +8,4 @@ Read more in [my blog post](https://alphamagenta.com/posts/unity-hex-grid).
 
 ---
 
-Made with ❤️ by Boris Okunskiy
+Made with ❤️ by [Boris Okunskiy](https://github.com/inca)
