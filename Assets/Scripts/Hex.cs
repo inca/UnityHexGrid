@@ -5,8 +5,8 @@ using UnityEngine;
 public struct Hex {
 
     public static float RADIUS = 0.5f;
-    public static Vector2 Q_BASIS = new Vector2(2f, 0) * RADIUS;
-    public static Vector2 R_BASIS = new Vector2(1f, Mathf.Sqrt(3)) * RADIUS;
+    public static Vector2 Q_BASIS = new Vector2(2f, 0);
+    public static Vector2 R_BASIS = new Vector2(1f, Mathf.Sqrt(3));
     public static Vector2 Q_INV = new Vector2(1f / 2, - Mathf.Sqrt(3) / 6);
     public static Vector2 R_INV = new Vector2(0, Mathf.Sqrt(3) / 3);
 
@@ -74,7 +74,7 @@ public struct Hex {
     }
 
     public Vector2 ToPlanar() {
-        return Q_BASIS * q + R_BASIS * r;
+        return (Q_BASIS * q + R_BASIS * r) * RADIUS;
     }
 
     public Vector3 ToWorld(float y = 0f) {
