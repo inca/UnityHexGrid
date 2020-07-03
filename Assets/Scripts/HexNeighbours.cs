@@ -10,7 +10,7 @@ public class HexNeighbours : MonoBehaviour {
     }
 
     void OnDrawGizmosSelected() {
-        Gizmos.color = Color.yellow;
+        Gizmos.color = Color.red;
         foreach (Hex neighbour in hex.Neighbours()) {
             Gizmos.DrawSphere(neighbour.ToWorld(), .25f);
         }

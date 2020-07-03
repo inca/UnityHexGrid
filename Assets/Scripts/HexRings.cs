@@ -15,7 +15,7 @@ public class HexRings : MonoBehaviour {
     }
 
     void OnDrawGizmosSelected() {
-        Gizmos.color = Color.magenta;
+        Gizmos.color = Color.cyan;
         foreach (Hex hex in Hex.Spiral(this.hex, minRadius, maxRadius)) {
             Gizmos.DrawSphere(hex.ToWorld(), .25f);
         }
